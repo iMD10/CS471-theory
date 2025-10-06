@@ -4,12 +4,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% block title %}{% endblock title %} {% block stylesheets %}{% endblock
-    stylesheets %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% block title %}{% endblock title %} {% block stylesheets %}{% endblock stylesheets %}
   </head>
   <body>
-    {% include "includes/header.html" %} {% block content %}{% endblock content
-    %} {% include "includes/footer.html" %} {% block javascripts %}{% endblock
-    javascripts %}
+    {% include "includes/header.html" %} 
+    {% block content %}
+    {% endblock content %} 
+    {% include "includes/footer.html" %} 
+    {% block javascripts %}
+    {% endblock javascripts %}
   </body>
 </html>
